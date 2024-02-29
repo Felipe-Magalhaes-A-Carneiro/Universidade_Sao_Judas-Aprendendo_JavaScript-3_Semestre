@@ -21,7 +21,7 @@ Colaborações são sempre bem-vindas!
 * Agradecimentos:
 Um agradecimento especial ao professor Rodrigo Bossini e a Universiddade São Judas Tadeu por fornecer uma apostila que serve como nosso guia nessa jornada de aprendizado.
 
-“Este projeto foi concebido com entusiasmo e comprometimento, visando não apenas demonstrar minhas habilidades em programação, mas também expressar o desejo genuíno de proporcionar uma solução prática e eficaz para os usuários. Convido você a explorar, contribuir, relatar problemas ou sugerir melhorias”. 
+“Este projeto foi concebido com entusiasmo e comprometimento, visando não apenas demonstrar minhas habilidades em programação, mas também expressar o desejo genuíno de proporcionar uma solução prática e eficaz para os usuários. Convido você a explorar, contribuir, relatar problemas ou sugerir melhorias”. - Felipe Magalhães
 
 
 
