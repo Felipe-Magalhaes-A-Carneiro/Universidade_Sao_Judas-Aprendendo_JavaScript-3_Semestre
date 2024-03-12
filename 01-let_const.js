@@ -42,4 +42,3 @@ if (idade >= 18){
 }
 //ainda existe aqui
 console.log('Até mais, ' + identidade +'.');
-
