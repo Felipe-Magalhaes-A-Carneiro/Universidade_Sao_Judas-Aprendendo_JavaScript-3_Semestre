@@ -8,9 +8,10 @@ intuitivo.
 e seus respectivos tipos forem iguais. Caso contrário, o resultado é false*/
 
 console.log(1 == 1)//true
-console.log(1 == "1")//true
+console.log(1 == "1")//true exemplo perfeito de coerção implicita, logo o == não é confiavel aqui
 console.log(1 === 1)//true
-console.log(1 === "1")//false
+console.log(1 === "1")//false exemplo perfeito de não coerção, logo o === está correto
+// 1 é inteiro e o "1" é uma String, logo não são iguais
 console.log(true == 1)//true
 console.log(1 == [1])//true
 console.log(null == null)//true

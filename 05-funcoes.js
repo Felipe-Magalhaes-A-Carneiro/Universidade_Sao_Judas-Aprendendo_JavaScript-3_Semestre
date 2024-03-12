@@ -4,7 +4,7 @@ em algum momento. A forma tradicional para criar funções em JavaScript
 envolve a palavra funciont. */
 
 function hello (){
-    console.log("Oi");
+    console.log("Olá");
 }
 
 hello(); 
@@ -14,7 +14,7 @@ function hello(nome){
     console.log("Hello, " + nome)
 }
 
-hello("Amanda");
+hello("Felipe");
 
 function soma (a , b){
     return a + b;
