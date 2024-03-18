@@ -12,6 +12,7 @@ mencionadas. Há também o conceito de 'função de alta ordem'. É  aquela que 
 menos uma função como parâmetro e/ou devolve uma função quando seu processamento termina
 */
 
+
 /* Uma função pode er atribuída a uma variável: */
 
 let umaFuncao = function(){
@@ -20,6 +21,7 @@ let umaFuncao = function(){
 
 // e pode ser chamada assim:
 umaFuncao();
+
 
 /* f recebe uma função como parâmetro e, por isso é uma função de alta ordem.
 Por devolver uma função, g também é de alta ordem. */
@@ -78,3 +80,64 @@ function a(){
     b();
 }
 a();
+
+function ola(){
+    let nomeNovo = "Ana";
+    return function (){
+        console.log("Olá, Ana");
+    }
+}
+
+
+/*perceba que  aqui a função ola já teminou. É de se esperar que a variável nome 
+já não possa ser acessada*/
+let olaResult = ola();
+olaResult();
+
+//também vale com parâmetros
+function saudacoesFactory(saudacao, nomeNovo){
+    return function(){
+        console.log(saudacao + ", " + nomeNovo)
+    }
+}
+
+let olaJoao = saudacoesFactory("Olá" , "João");
+let tchauJoao = saudacoesFactory("Tchau" , "João");
+
+olaJoao();
+tchauJoao();
+
+// DEFINIÇÃO
+/* Uma função interna em conjunto com as variáveis de seu escopo externo é o que
+chamamos de closure */
+
+//ATENÇÃO
+/* O funcionamento de funções envolvendo closures, em alguns casos, pode ser
+contra-intuitivo */
+
+/* O funcionamento de funções envolvendo closures, em alguns casos, pode ser
+contra-intuitivo.*/
+
+function eAgora(){
+    let cont = 1;
+    function f1 (){
+        console.log(cont);
+
+    }
+    cont ++;
+    function f2(){
+        console.log(cont);
+}
+
+//JSON contendo as duas funções
+return {f1, f2}
+}
+
+let eAgoraResult = eAgora();
+
+/* neste momento, a funcão eAgora já executou ´por completo e a variável
+const já foi incrementada. Seu valor final é mantido e, assim, ambas f1 e
+f2 exibirão 2.  */
+
+eAgoraResult.f1();
+eAgoraResult.f2();
