@@ -1,7 +1,11 @@
 /* Funções: JavaScript possui formas diferentes para se criar funções:
 blocos de código com nome - ou não - que podem ser colocados em execução
 em algum momento. A forma tradicional para criar funções em JavaScript
-envolve a palavra funciont. */
+envolve a palavra funciont. 
+
+ Obs.: Parâmetros (o que está dentro dos parênteses) permitem que você generalize 
+ sua função para que ela possa aceitar diferentes valores e realizar as mesmas 
+ operações (extremamente útil).*/
 
 function hello (){
     console.log("Olá");
@@ -14,7 +18,7 @@ function hello(nome){
     console.log("Hello, " + nome)
 }
 
-hello("Felipe");
+hello("Felipe"); //Passando argumentos para o parâmetro mudar a função
 
 function soma (a , b){
     return a + b;

@@ -1,0 +1,28 @@
+Métodos de String:
+toUpperCase(): Converte todos os caracteres em maiúsculas.
+toLowerCase(): Converte todos os caracteres em minúsculas.
+charAt(): Retorna o caractere na posição especificada.
+indexOf(): Retorna a posição da primeira ocorrência de um valor especificado em uma string.
+split(): Divide uma string em um array de substrings.
+substring(): Retorna uma parte da string entre os índices especificados.
+
+
+Métodos de Array:
+push(): Adiciona um ou mais elementos ao final de um array.
+pop(): Remove o último elemento de um array e retorna esse elemento.
+shift(): Remove o primeiro elemento de um array e retorna esse elemento.
+unshift(): Adiciona um ou mais elementos ao início de um array.
+join(): Une todos os elementos de um array em uma string.
+slice(): Retorna uma cópia de parte de um array dentro de um novo array.
+
+
+Métodos de Objeto:
+keys(): Retorna um array contendo os nomes das propriedades de um objeto.
+values(): Retorna um array contendo os valores das propriedades de um objeto.
+hasOwnProperty(): Retorna um valor booleano indicando se o objeto possui a propriedade especificada como uma propriedade direta do objeto.
+toString(): Retorna uma string representando o objeto.
+assign(): Copia os valores de todas as propriedades enumeráveis de um ou mais objetos de origem para um objeto destino.
+
+OBS.: JavaScript possui muitos outros métodos disponíveis para manipulação de strings, arrays, objetos e outros tipos de dados. Consulte a documentação oficial do JavaScript para obter uma lista completa e detalhada de todos os métodos disponíveis.
+
+
