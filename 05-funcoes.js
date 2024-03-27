@@ -45,6 +45,8 @@ const triplo = function (n = 5){
 console.log(triplo());
 console.log(triplo(10));
 
+//Arrow function:
+
 /* A terceira possibilidade envolve o recurso chamado 'arrow function'. Quando
 escrevemos uma arrow function, especificamos somente a sua lista de parâmetros
 e seu corpo. Há um simbolo => - dai o nome arrow - entre eles. Uma arrow function
@@ -58,21 +60,27 @@ ser omitidos.
 'return' é opcional: Se usar as chaves deve-se usar o 'return'. Caso contrário, ele
 não pode ser usado.*/
 
-const ola = () => console.log("Hello");
+
+/*No exemplo a seguir, uma variável const "ola" é um função sem parâmetro, com o  uso do arrow function será dado um return, dizendo que seja imprimido "Olá" sempre que for chamado */
+const ola = () => console.log("Olá");
 ola();
 
+/* No exemplo a seguir, dará errado (Saída: NaN - Not a Number) pois é dado um
+valor ao parâmetro, logo o certo  é que seja utilzado chaves {}*/
+
+//forma ERRADA de usar o arrow function por conta do uso do parâmetro com valor:
 const dobrar = (valor) => dobrar * 2;
 console.log(dobrar(10));
 
-const triplicar = (valor) => {
-    return valor * 3;
+//forma CORRETA de usar o arrow function, pois é dado um valor ao parâmetro:
+const triplicar = (result) => {
+    return result * 3;
 }
-
 console.log(triplicar(10));
-// e agora?
+
 
 const ePar = (numero) => {
-    numero % 2 === 0;
-}
+    numero % 2 === 0
+};
 
 console.log(ePar(10));
